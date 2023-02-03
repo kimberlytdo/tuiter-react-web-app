@@ -4,6 +4,7 @@ body {
     border-color: rgb(47, 51, 54);
     width: 100%;
     font-family: "Arial";
+    margin: 0;
 }
 
 .wd-container {
