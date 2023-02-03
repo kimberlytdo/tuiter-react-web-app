@@ -192,6 +192,366 @@ p#id-selector-2 {
     float: left;
 }
 
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+
+.rotate-list-1 {
+    transform: rotate(33deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-image-2 {
+    transform: rotate(-10deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-linear-1 {
+    background: linear-gradient(rebeccapurple, blue);
+    width: 400px;
+    height: 200px;
+}
+
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial-1 {
+    background: radial-gradient(darkseagreen, pink);
+    width: 300px;
+    height: 200px;
+}
+
+.gradients-positioned {
+    background:
+            radial-gradient(
+                    at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.gradients-positioned-1 {
+    background:
+            radial-gradient(
+                    at bottom left, brown, lightpink);
+    width: 400px;
+    height: 400px;
+    color: white;
+}
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein_new {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+        border-radius: 0px;
+    } /* continued on right */
+
+    50% {
+        position: relative;
+        top: -20px;
+        font-size: 50%;
+        margin-left: 25%;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        color: white;
+        border-radius: 20px;
+    }
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        color: white;
+        border-radius: 0px;
+    }
+}
+
+.animation-keyframes-1 {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein_new;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    } /* continued on right */
+
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+.flex-container-a {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+}
+
+.flex-container-a > .flex-box-a {
+    flex-basis: 100%;
+}
+
+.flex-box-a {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1-a {
+    background-color: purple;
+}
+.flex-box-2-a {
+    background-color: white;
+    border: 2px black dotted;
+    color: black;
+}
+.flex-box-3-a {
+    background-color: pink;
+    color: black;
+}
+
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+}
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+}
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+}
 
 
 
+
+/*my try at media queries*/
+
+
+@media (min-width: 0px)
+and (max-width: 700px) {
+    p {
+        background-color: black;
+    }
+    .media-query {
+        background-color: pink;
+        color: black;
+    }
+    img {
+        width: 400px;
+    }
+    .media-query {
+        width: 200px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h6 {
+        font-size: 10px;
+    }
+}
+@media (min-width: 700px)
+and (max-width: 800px) {
+    p {
+        background-color: magenta;
+    }
+    .media-query {
+        background-color: orange;
+        color: blue;
+    }
+    img {
+        width: 500px;
+    }
+    .media-query {
+        width: 300px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    h6 {
+        font-size: 51px;
+    }
+}
+@media (min-width: 800px)
+and (max-width: 1800px) {
+    p {
+        background-color: lawngreen;
+    }
+    .media-query {
+        background-color: brown;
+        color: black;
+    }
+    img {
+        width: 200px;
+    }
+    .media-query {
+        width: 100px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h6 {
+        font-size: 22px;
+    }
+}

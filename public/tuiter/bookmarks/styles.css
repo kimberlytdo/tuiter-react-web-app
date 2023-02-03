@@ -1,0 +1,169 @@
+body {
+    background-color: #000;
+    color: #fff;
+    border-color: rgb(47, 51, 54);
+    width: 100%;
+    font-family: "Arial";
+}
+
+.wd-container {
+    margin-left: 50px;
+    border-left: rgb(47, 51, 54) solid 1px;
+    /*padding-left: 16px;*/
+}
+
+.wd-search {
+    width: 84vw;
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+    background-color: rgb(33, 35, 39);
+    border: none;
+    border-radius: 30px;
+    margin-right: 12px;
+    margin-left: 16px;
+    padding: 16px 16px 16px 70px;
+}
+
+.wd-header {
+    width: 90vw;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.wd-profile {
+    border-radius: 100px;
+    width: 48px;
+    top: 12px;
+    margin-left: 16px;
+    float: left;
+}
+
+.wd-content {
+    width: 100%;
+    border-top: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+    height: 85vh;
+}
+
+.wd-trending {
+    background-color: #000;
+}
+
+.wd-large-triple-dots {
+    width: 15px;
+    float: right;
+    top: -30px;
+    position: relative;
+    display: inline-block;
+}
+
+.wd-triple-dots {
+    width: 15px;
+    float: right;
+    margin-left: 24vw;
+    display: inline-block;
+}
+
+.wd-subtext {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    display: inline;
+    padding: 0;
+}
+
+.wd-content h1 {
+    display: inline-block;
+    margin: 0px;
+    font-size: 21px;
+}
+
+h1.wd-trending-title {
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+}
+
+h2.wd-trending-title {
+    display: inline;
+    font-size: 18px;
+}
+
+.wd-trending-post {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.wd-official-subtext {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+    padding-right: 20px;
+}
+
+.wd-shared-post {
+    float: left;
+    margin-left: 12px;
+    max-width: 506px;
+}
+
+.wd-post-header {
+    float:left;
+    margin-left: 16px;
+    margin-bottom: 12px;
+}
+
+.wd-post-text {
+    clear: both;
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+.wd-shared-post>.wd-post-text {
+    clear: both;
+}
+
+.wd-main {
+    color: rgb(110, 118, 125);
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+.wd-shared-image>div {
+    padding: 12px;
+}
+
+.wd-shared-image {
+    float:left;
+    margin-left: 16px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    border: 1px solid rgb(47, 51, 54);
+    clear: both;
+}
+
+.wd-shared-image>img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 264px;
+    width: 504px;
+}
+
+.wd-reactions {
+    list-style: none;
+    display: inline-block;
+    padding-right: 80px;
+    font-size: 12px;
+}
+
+.wd-reactions a {
+    color: #6E767D;
+    text-decoration: none;
+}
+
+.wd-heart span {
+    color: #ff69b4;
+}
+.wd-reaction-box {
+    margin-left: 12px;
+}
