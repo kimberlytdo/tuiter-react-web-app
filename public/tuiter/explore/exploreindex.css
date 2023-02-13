@@ -1,0 +1,165 @@
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 0;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+}
+
+.list-group, .list-group-item {
+    border: none;
+}
+
+.nav, .nav-tabs, .nav-item {
+    border: none;
+}
+
+.nav-item a {
+    color: #8d8d8d;
+    font-weight: bold;
+    border: none;
+}
+
+a.nav-link.active {
+    color: #000;
+    border: none;
+}
+
+.highlighted-tab {
+    border-bottom: solid 6px #1DA1F2;
+}
+
+fa-certificate {
+    color: #1DA1F2;
+}
+
+h5 {
+    font-weight: bolder;
+    padding-top: 20px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.list-group-follow {
+    background-color: #f5f5f5;
+    /*padding: 10px;*/
+    /*border-radius: 20px;*/
+}
+
+.list-group-follow li {
+    background-color: #efefef;
+}
+
+.bottom-left small {
+    color: white;
+}
+
+.bottom-left small {
+    margin-left: -40px;
+}
+
+.bottom-left h1 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+small {
+    color: #8d8d8d;
+}
+
+a, .nav-link {
+    color: #1DA1F2;
+}
+
+.tweet-btn {
+    background-color: #1DA1F2;
+    border: none;
+}
+
+.highlighted-nav {
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+.nav-text {
+    margin-left: 20px;
+}
+
+.fine-print small {
+    margin-right: 10px;
+}
+
+@media (min-width: 576px) {
+    .nav-text {
+        display: none;
+    }
+    .follow {
+        display: none;
+    }
+    .entertainment {
+        display: none;
+    }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .nav-text {
+        display: none;
+    }
+    .tweet-btn {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .follow {
+        display: none;
+    }
+    .entertainment {
+        display: inline;
+    }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .nav-text {
+        display: inline;
+    }
+    .follow {
+        display: block;
+    }
+    .entertainment {
+        display: inline;
+    }}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .nav-text  {
+        display: inline;
+    }
+    .follow {
+        display: block;
+    }
+    .entertainment {
+        display: inline;
+    }}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .nav-text  {
+        display: inline;
+    }
+    .follow {
+        display: block;
+    }
+    .entertainment {
+        display: inline;
+    }}
