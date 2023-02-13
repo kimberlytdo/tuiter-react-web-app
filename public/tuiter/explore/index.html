@@ -1,82 +1,303 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Explore</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-    <div class="wd-container">
-        <div class="wd-header">
-            <input class="wd-search" type="text" placeholder="Search Tuiter" value="Search Twitter">
-            <img class="wd-search-icon" src="https://img.icons8.com/windows/32/6E767D/search--v1.png"/>
-            <a href="settings.html"><img class="wd-settings" src="https://img.icons8.com/ios/50/1DA1F2/gear.png"/></a>
+    <div class="row mx-auto">
+        <div class="col-2 mx-auto mt-4"">
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fab fa-twitter fa-2x"></i><br/>
+                </li>
+                <li class="list-group-item"><button class="btn ps-0"><i class="fa fa-home pe-1"></i>Home</button>
+                </li>
+                <li class="list-group-item active"><button class="btn ps-0 text-white"><i class="fa fa-hashtag pe-1 text-white"></i>Explore</button>
+                </li>
+                <li class="list-group-item pe-0"><button class="btn ps-0"><i class="fa fa-bell pe-1"></i>Notifications</button>
+                </li>
+                <li class="list-group-item"><button class="btn ps-0"><i class="fa fa-envelope pe-1"></i>Messages</button>
+                </li>
+                <li class="list-group-item"><button class="btn ps-0"><i class="fa fa-bookmark pe-1"></i>Bookmarks</button>
+                </li>
+                <li class="list-group-item"><button class="btn ps-0"><i class="fa fa-list pe-1"></i>Lists</button>
+                </li>
+                <li class="list-group-item"><button class="btn ps-0"><i class="fa fa-user pe-1"></i>Profile</button>
+                </li>
+                <li class="list-group-item"><button class="btn ps-0"><span style="font-size: 11px; margin-left: -5px; margin-right: 0px">
+                <span class="fa-stack fa-xs ps-0">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse" style="color: white"></i>
+<!--                    <i class="fas fa-flag fa-stack-1x fa-inverse"></i>-->
+                </span></span>
+                    More</button>
+                </li>
+            </ul>
+            <button class="btn btn-primary rounded-pill ps-5 pe-5 mt-2">Tweet</button>
+
         </div>
-        <ul class="wd-tabs">
-            <li> <span class="wd-highlight">For you</span></li>
-            <li>Trending</li>
-            <li>COVID-19</li>
-            <li>News</li>
-            <li>Sports</li>
-            <li>Entertainment</li>
-        </ul>
-        <div class="wd-content">
-            <div class="wd-trending">
-                <div class="wd-trending-post">
-                    <p class="wd-subtext">Trending in Science</p>
-                    <img class="wd-large-triple-dots" src="https://img.icons8.com/ios-glyphs/30/ffffff/ellipsis.png"/>
-                    <br>
-                    <div class="wd-trending-title">
-                        <h1>Starship</h1>
-                        <img class="wd-triple-dots" src="https://img.icons8.com/ios-glyphs/30/6E767D/ellipsis.png"/>
-                    </div>
-                    <p class="wd-subtext">55.5k Tweets</p>
-                </div>
-
-                <div class="wd-trending-post">
-                    <p class="wd-subtext">Sports - Trending</p>
-                    <img class="wd-large-triple-dots" src="https://img.icons8.com/ios-glyphs/30/ffffff/ellipsis.png"/>
-                    <br>
-                    <div class="wd-trending-title">
-                        <h1>Joe Rogan</h1>
-                        <img class="wd-triple-dots" src="https://img.icons8.com/ios-glyphs/30/6E767D/ellipsis.png"/>
-                    </div>
-                    <p class="wd-subtext">5,218 Tweets</p>
-                </div>
-
-            </div>
-            <div class="wd-feed">
-                <div class="wd-trending-post">
-                    <img class="wd-feed-image" src="cuomo.png"/>
-                    <div><span class="wd-subtext wd-official-subtext">The New York Times</span><span class="wd-subtext">Yesterday</span></div>
-                    <h1 class="wd-trending-title">CNN&#39;s Cuomo Conundrum: A Star Anchor With a Brother in Trouble
-                    </h1>
-                    <p class="wd-subtext">5,218 Tweets</p>
-                </div>
-
-                <div class="wd-trending-post">
-                    <img class="wd-feed-image" src="https://imageio.forbes.com/specials-images/imageserve/5f8c7bac1c3d5ac0305e0c20/CoronaVirus-Cell-Isolated/960x0.jpg?format=jpg&width=960"/>
-                    <div><span class="wd-subtext">COVID-19 - LIVE</span></div>
-                    <h1 class="wd-trending-title">COVID-19 News and Updates for Massachussets</h1>
-                    <p class="wd-subtext">5,218 Tweets</p>
-                </div>
-
-                <div class="wd-trending-post">
-                    <img class="wd-feed-image" src="https://static01.nyt.com/images/2021/11/02/well/27boosters/27boosters-mediumSquareAt3X.jpg"/>
-                    <div><span class="wd-subtext wd-official-subtext">Bloomberg Opinion</span><span class="wd-subtext">Yesterday</span></div>
-                    <h1 class="wd-trending-title">Thinking about getting a booster? Read this first.</h1>
-                    <p class="wd-subtext">5,218 Tweets</p>
+        <div class="col-6 mx-auto mt-4">
+            <div class="container">
+            <div class="row no-gutters">
+                <div class="col-2 input-group input-group-lg rounded-pill bg-white  border-secondary mb-4">
+                    <span class="input-group-text bg-transparent border-0" id="basic-addon2"><i class="fas fa-search fa-sm" style="color: #939597; background-color: #fff"></i></span>
+                    <input type="text" class="form-control form-control-lg rounded-pill bg-white border me-5" placeholder=" Search"
+                           aria-label="Search" aria-describedby="basic-addon2" />
+                    <span class="col-1" style="font-size: 30px; color: dodgerblue;"><i class="bi bi-gear-fill"></i></span>
+</span>
                 </div>
             </div>
-            <div class="wd-trending wd-trending-bottom">
-                <div class="wd-trending-post">
-                    <p class="wd-subtext">Trending in United States</p>
-                    <br>
-                    <div class="wd-trending-title">
-                        <h1>Wonder Bread</h1>
-                        <img class="wd-triple-dots" src="https://img.icons8.com/ios-glyphs/30/6E767D/ellipsis.png"/>
-                    </div>
-                    <p class="wd-subtext">1,259 Tweets</p>
-                </div>
             </div>
+            <ul class="nav nav-tabs mb-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1">Entertainment</a>
+                </li>
+            </ul>
+
+            <div class="container">
+                <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" style="width:100%;">
+                <h1 class="bottom-left">SpaceX's Starship</h1>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-start">
+                            <div class="p-2" style="width: auto">
+                                <small>Web Development</small></br>
+                                <strong>ReactJS</strong>
+                                <span style="font-size: 8px" class="fa-stack fa-xs ps-0">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>
+                                </span>
+                                <small>- 2 hr</small>
+                                <h6>React.JS is a component based front end library that makes it very easy to build Single Page Applications or SPAs</h6>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="p-2">
+                            <img src="data:image/png;base64,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" class="rounded" style="height: 100px;"
+                                 alt="Avatar" />
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-start">
+                            <div class="p-2" style="width: auto">
+                                <strong>JavaScript</strong>
+                                <span style="font-size: 8px" class="fa-stack fa-xs ps-0">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>
+                                </span>
+                                <small>- 2 hr</small>
+                                </br>
+                                <h6>JavaScript is a programming language that can run on browsers as well as desktops</h6>
+                                <small>123K Tweets</small>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="p-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="rounded" style="height: 100px;"
+                                 alt="Avatar" />
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-start">
+                            <div class="p-2" style="width: auto">
+                                <small>Web Development</small></br>
+                                <strong>jQuery</strong>
+                                </br>
+                                <small>123K Tweets</small>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="p-2">
+                            <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/jquery_vertical_logo_icon_169489.png" class="rounded" style="height: 100px;"
+                                 alt="Avatar" />
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-start">
+                            <div class="p-2" style="width: auto">
+                                <small>Web Development</small></br>
+                                <strong>NodeJS</strong>
+                                <span style="font-size: 8px" class="fa-stack fa-xs ps-0">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>
+                                <small>- 2 hr</small>
+                                </span>
+                                </br>
+                                <small>123K Tweets</small>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="p-2">
+                            <img src="https://gitlab.com/uploads/-/system/project/avatar/21050922/nodejs-logo-png--435.png" class="rounded" style="height: 100px;"
+                                 alt="Avatar" />
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="col-3 mx-auto mt-4">
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Who to Follow</strong>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-start">
+                        <div class="p-2"><img src="https://cdn.freebiesupply.com/logos/thumbs/2x/java-4-logo.png" class="rounded-circle" style="width: 50px;"
+                                              alt="Avatar" />
+                        </div>
+                        <div class="p-2" style="width: auto">Java
+                            <span style="font-size: 8px" class="fa-stack fa-xs ps-0">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>
+                            </span>
+                            </br><small>@Java</small></span>
+                        </div>
+                        </div>
+                        </br>
+                    <div class="p-2">
+                        <span><button class="btn btn-primary rounded-pill ps-3 pe-3 float-end">Follow</button></span>
+                    </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-start">
+                            <div class="p-2"><img src="https://yt3.googleusercontent.com/ytc/AL5GRJUbyc5-XWjux8b2hl0yK7KxNt-BpInezf0mHJwH=s900-c-k-c0x00ffffff-no-rj" class="rounded-circle" style="width: 50px;"
+                                                  alt="Avatar" />
+                            </div>
+                            <div class="p-2" style="width: auto">Relatively Space
+                                <span style="font-size: 8px" class="fa-stack fa-xs ps-0">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>
+                            </span>
+                                </br><small>@relativelyspace</small></span>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="p-2">
+                            <button class="btn btn-primary rounded-pill ps-3 pe-3 float-end">Follow</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-start">
+                            <div class="p-2"><img src="https://www.c-r-y.org.uk/wp-content/uploads/2016/10/Virgin-logo.png" class="rounded-circle" style="width: 50px;"
+                                                  alt="Avatar" />
+                            </div>
+                            <div class="p-2" style="width: auto">Virgin Galactic
+                                <span style="font-size: 8px" class="fa-stack fa-xs ps-0">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>
+                            </span>
+                                </br><small>@virgingalactic</small></span>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="p-2">
+                            <button class="btn btn-primary rounded-pill ps-3 pe-3 float-end">Follow</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-start">
+                            <div class="p-2"><img src="https://images.seattletimes.com/wp-content/uploads/2019/07/nasameatball.jpg?d=780x701" class="rounded-circle" style="width: 50px;"
+                                                  alt="Avatar" />
+                            </div>
+                            <div class="p-2" style="width: auto">NASA
+                                <span style="font-size: 8px" class="fa-stack fa-xs ps-0">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>
+                            </span>
+                                </br><small>@nasa</small></span>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="p-2">
+                            <button class="btn btn-primary rounded-pill ps-3 pe-3 float-end">Follow</button>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-start">
+                            <div class="p-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png" class="rounded-circle" style="width: 50px;"
+                                                  alt="Avatar" />
+                            </div>
+                            <div class="p-2" style="width: auto">Tesla
+                                <span style="font-size: 8px" class="fa-stack fa-xs ps-0">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>
+                            </span>
+                                </br><small>@tesla</small></span>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="p-2">
+                            <button class="btn btn-primary rounded-pill ps-3 pe-3 float-end">Follow</button>
+                        </div>
+                    </div>
+                </li>
+<!--                <li class="list-group-item">-->
+<!--                    <img src="https://yt3.googleusercontent.com/ytc/AL5GRJUbyc5-XWjux8b2hl0yK7KxNt-BpInezf0mHJwH=s900-c-k-c0x00ffffff-no-rj" class="rounded-circle" style="width: 50px;"-->
+<!--                         alt="Avatar" />-->
+<!--                    Relatively Space <span style="font-size: 8px" class="fa-stack fa-xs ps-0">-->
+<!--                    <i class="fas fa-circle fa-stack-2x"></i>-->
+<!--                    <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>-->
+<!--                </span>-->
+<!--                    </br>-->
+<!--                    <small>@RelativelySpace</small></li>-->
+<!--                <li class="list-group-item">Virgin Galactic <span style="font-size: 8px" class="fa-stack fa-xs ps-0">-->
+<!--                    <i class="fas fa-circle fa-stack-2x"></i>-->
+<!--                    <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>-->
+<!--                </span></li>-->
+<!--                <li class="list-group-item">NASA <span style="font-size: 8px" class="fa-stack fa-xs ps-0">-->
+<!--                    <i class="fas fa-circle fa-stack-2x"></i>-->
+<!--                    <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>-->
+<!--                </span></li>-->
+<!--                <li class="list-group-item">Tesla <span style="font-size: 8px" class="fa-stack fa-xs ps-0">-->
+<!--                    <i class="fas fa-circle fa-stack-2x"></i>-->
+<!--                    <i class="fas fa-check fa-stack-1x fa-inverse" style="color: white"></i>-->
+<!--                </span></li>-->
+            </ul>
         </div>
     </div>
 </body>
