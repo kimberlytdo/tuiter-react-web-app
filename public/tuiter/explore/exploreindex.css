@@ -42,6 +42,10 @@ fa-certificate {
     color: #1DA1F2;
 }
 
+#search {
+    background-color: #8c8c8c;
+}
+
 h5 {
     font-weight: bolder;
     padding-top: 20px;
