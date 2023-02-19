@@ -1,4 +1,8 @@
 /* Container holding the image and the text */
+.list-group {
+    text-align: left;
+}
+
 .container {
     position: relative;
     text-align: center;
