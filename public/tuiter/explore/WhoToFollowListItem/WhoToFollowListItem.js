@@ -1,29 +1,18 @@
-const WhoToFollowListItem = () => {
+const WhoToFollowListItem = (who) => {
     return(`
-   <div class="list-group">
-     <a class="list-group-item" href="/">
-       <i class="fab fa-twitter"></i></a>
-     <a class="list-group-item" href="/">
-       <i class="fa fa-home"></i> Home</a>
-     <a class="list-group-item" href="/">
-       <i class="fa fa-hashtag"></i> Explore</a>
-     <a class="list-group-item" href="/">
-       <i class="fa fa-bell"></i> Notifications</a>
-     <a class="list-group-item" href="/">
-       <i class="fa fa-envelope"></i> Messages</a>
-     <a class="list-group-item" href="/">
-       <i class="fa fa-bookmark"></i> Bookmarks</a>
-     <a class="list-group-item" href="/">
-       <i class="fa fa-list"></i> Lists</a>
-     <a class="list-group-item" href="/">
-       <i class="fa fa-user"></i> Profile</a>
-     <a class="list-group-item" href="/">
-       <i class="fa fa-circle"></i> More</a>
-   </div>
-   <div class="d-grid mt-2">
-     <a href="tweet.html"
-        class="btn btn-primary btn-block rounded-pill">
-        Tweet</a>
+    <div class="">
+       <div class="list-group d-inline-flex">
+       <img src="${who.avatarIcon}"/>
+         <a class="list-group-item" href="/">${who.userName}
+         <i class="fa fa-circle"></i>
+         <p href="/">@${who.handle}</p>
+         </a>
+       </div>
+       <div class="mt-2 d-inline-flex">
+         <a href="tweet.html"
+            class="btn btn-primary rounded-pill">
+            Follow</a>
+       </div>
    </div>
  `);
 }
