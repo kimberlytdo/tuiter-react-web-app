@@ -1,4 +1,7 @@
-/* Container holding the image and the text */
+body {
+    /*color: white;*/
+}
+
 .list-group, .list-group-item {
     text-align: left;
     color: white;
@@ -9,7 +12,7 @@
     color: rgb(77, 77, 77);
 }
 
-.post {
+.post, .center-post {
     background-color: rgb(34, 34, 34);
 }
 
@@ -23,8 +26,12 @@
 
 #follow, #navigation {
     background-color: rgb(6, 6, 6);
+    color: white;
 }
 
+.nav-title {
+    color: white;
+}
 
 /* Bottom left text */
 .bottom-left {
@@ -48,6 +55,9 @@ body {
     .entertainment {
         display: none;
     }
+    .nav-title {
+        display: none;
+    }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -65,6 +75,9 @@ body {
     .entertainment {
         display: inline;
     }
+    .nav-title {
+        display: inline;
+    }
 }
 
 /*// Large devices (desktops, 992px and up)*/
@@ -77,6 +90,9 @@ body {
     }
     .entertainment {
         display: inline;
+    }
+    .nav-title {
+        display: none;
     }}
 
 /*// X-Large devices (large desktops, 1200px and up)*/
@@ -88,6 +104,9 @@ body {
         display: block;
     }
     .entertainment {
+        display: inline;
+    }
+    .nav-title {
         display: inline;
     }
 
@@ -103,4 +122,8 @@ body {
     }
     .entertainment {
         display: inline;
-    }}
+    }
+    .nav-title {
+        display: inline;
+    }
+}
