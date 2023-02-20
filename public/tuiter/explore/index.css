@@ -1,21 +1,40 @@
 /* Container holding the image and the text */
-.list-group {
+.list-group, .list-group-item {
     text-align: left;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+
+.wd-suggested-post-color {
+    color: rgb(77, 77, 77);
+}
+
+.post {
+    background-color: rgb(34, 34, 34);
 }
 
 .container {
     position: relative;
-    text-align: center;
-    color: white;
+    text-align: left;
+    background-color: rgb(6, 6, 6);
     width: 100%;
     padding: 0;
 }
+
+#follow, #navigation {
+    background-color: rgb(6, 6, 6);
+}
+
 
 /* Bottom left text */
 .bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
+}
+
+body {
+    background-color:  rgb(6, 6, 6);
 }
 
 
@@ -54,7 +73,7 @@
         display: inline;
     }
     .follow {
-        display: block;
+        display: none;
     }
     .entertainment {
         display: inline;
@@ -70,7 +89,9 @@
     }
     .entertainment {
         display: inline;
-    }}
+    }
+
+}
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
