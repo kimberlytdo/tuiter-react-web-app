@@ -25,8 +25,9 @@ const TuitItem = (
                 </div>
                 <div className="col-11 ">
                     <div className="fw-bolder">
-                        {tuit.userName} <i className="fas fa-check-circle ps-1"></i>
-                        <span className="text-secondary fw-normal wd-text-post-small">{tuit.subName} * {tuit.time}</span>
+                        {tuit.userName} <i className="fas fa-check-circle ps-1"></i><i
+                        className="bi bi-check-circle-fill text-primary"></i>&nbsp;&nbsp;
+                        <span className="text-secondary fw-normal wd-text-post-small">{tuit.subName} -  {tuit.time}</span>
                     </div>
                     <div className="pt-1 pb-2">
                         {tuit.text}
@@ -54,14 +55,15 @@ const TuitItem = (
 
                     <div>
 
-                        <i className="far fa-comment ps-1 pt-3 text-secondary"></i>
+                        <i className="far fa-comment ps-1 pt-3 text-secondary"></i><i className="bi bi-chat"></i>
                         <label className=" ps-1 pe-5 pt-3 text-secondary">{tuit.comment}</label>
 
-                        <i className="fas fa-retweet ps-1 pt-3 text-secondary"></i>
+                        <i className="fas fa-retweet ps-1 pt-3 text-secondary"></i><i
+                        className="bi bi-arrow-repeat"></i>
                         <label className=" ps-1 pe-5 pt-3 text-secondary">{tuit.share}</label>
 
-                        <i className="far fa-heart ps-1 pt-3 text-secondary"></i>
-                        <label className=" ps-1 pe-5 pt-3 text-secondary">{tuit.share}</label>
+                        <i className="far fa-heart ps-1 pt-3 text-secondary"></i><i className="bi bi-heart"></i>
+                        <label className=" ps-1 pe-5 pt-3 text-secondary">{tuit.love}</label>
 
                         <i className="fas fa-upload ps-1 pt-3 text-secondary"></i>
 

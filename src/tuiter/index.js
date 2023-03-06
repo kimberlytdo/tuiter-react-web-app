@@ -19,7 +19,8 @@ function Tuiter() {
                 </Routes>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                <WhoToFollowList/>
+                {/*<WhoToFollowList/>*/}
+                {WhoToFollowList()}
             </div>
         </div>
     );
