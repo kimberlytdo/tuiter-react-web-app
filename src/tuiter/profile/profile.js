@@ -5,7 +5,7 @@ const Profile = (
     {
         profile = {
             "firstName": "Jose", "lastName": "Annunziato", "handle": "@jannunzi",
-            "profilePicture": "jose.png", 	"bannerPicture": "polyglot.png",
+            "profilePicture": "tesla.png", 	"bannerPicture": "starship.jpeg",
             "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
             "website": "youtube.com/webdevtv",
             "location": "Boston, MA",	"dateOfBirth": "07/07/1968",	"dateJoined": "04/2009",
@@ -18,14 +18,14 @@ const Profile = (
         <div className = "container border border-light">
 
             <div className = "col">
-                <img className = "img-fluid" alt='#' src={profile.bannerPicture}></img>
+                <img className = "img-fluid" alt='#' src={`/images/${profile.bannerPicture}`}></img>
             </div>
 
             <li className="list-group-item">
-                <div className="col-2">
-                    <img className = "rounded-circle" src={profile.profilePicture}></img>
+                <div className="col">
+                    <img className = "rounded-circle col-2 float-left" src={`/images/${profile.profilePicture}`}></img>
                     <Link to="/tuiter/edit-profile">
-                        <button className="rounded-pill btn btn-outline-secondary text-dark float-end mt-2 ps-3 pe-3 fw-bold">
+                        <button className="float-end rounded-pill btn btn-outline-secondary text-dark mt-2 ps-3 pe-3 fw-bold">
                             Edit
                         </button>
                     </Link>

@@ -4,7 +4,7 @@ import tuits from './tuits.json';
 const currentUser = {
  "userName": "NASA",
  "handle": "@nasa",
- "image": "spacex.jpeg",
+ "image": "nasa.jpeg",
 };
 
 const templateTuit = {
@@ -14,7 +14,6 @@ const templateTuit = {
  "liked": false,
  "replies": 0,
  "retuits": 0,
- // "tuit": "hello",
  "likes": 0,
 }
 

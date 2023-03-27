@@ -49,13 +49,14 @@ const EditProfileComponent = () => {
             </div>
 
 
+
             <div className = "col">
-                <img className = "img-fluid" src={profile.bannerPicture}></img>
+                <img className = "img-fluid" alt='#' src={`/images/${profile.bannerPicture}`}></img>
             </div>
             <li className="list-group-item">
                 <div className="col-2">
-                    <img className = "rounded-circle" width = {150} height = {150} src={profile.profilePicture}></img>
 
+                    <img width = {150} className = "rounded-circle float-left" src={`/images/${profile.profilePicture}`}></img>
                 </div>
             </li>
             <div className = "col">

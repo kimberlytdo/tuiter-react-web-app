@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const profile = {
     "firstName": "Jose", "lastName": "Annunziato", "handle": "@jannunzi",
-    "profilePicture": "jose.png", 	"bannerPicture": "polyglot.png",
+    "profilePicture": "tesla.png", 	"bannerPicture": "starship.jpeg",
     "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
     "website": "youtube.com/webdevtv",
     "location": "Boston, MA",	"dateOfBirth": "07/07/1968",	"dateJoined": "04/2009",

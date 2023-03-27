@@ -37,7 +37,8 @@ const TuitItem = (
         <li className="list-group-item border-0">
             <div className="row">
                 <div className="col-1 ">
-                    <img className="float-end rounded-pill" src='./{tuit.image}' height="40px"/>
+                    <img className="float-end rounded-pill" src={`../images/${tuit.image}`} height="40px"/>
+                    {/*<img width={70} className="float-end rounded-3" src={`/images/${post.image}`}/>*/}
                 </div>
                 <div className="col-11 ">
                     <div className="fw-bolder">
@@ -53,7 +54,6 @@ const TuitItem = (
                     </div>
                     <div className="border rounded">
                         <div className="text-secondary wd-text-post-small">
-                            {tuit.linkIcon}
                             {tuit.link}
                         </div>
                     </div>
@@ -67,7 +67,9 @@ const TuitItem = (
                         className="bi bi-arrow-repeat"></i>
                         <label className=" ps-1 pe-5 pt-3 text-secondary">{tuit.retuits}</label>
 
-                        <span onClick={loveClickHandler}><i className="far fa-heart ps-1 pt-3 text-secondary"></i><i className="bi bi-heart"></i>
+                        <span onClick={loveClickHandler}><i className="far fa-heart ps-1 pt-3 text-secondary"></i>
+                                  <b>{ tuit.liked ?
+                                <i className="bi bi-heart-fill text-danger"></i> : <i className="bi bi-heart"></i>}</b>
                             <label className=" ps-1 pe-5 pt-3 text-secondary">{tuit.likes}</label></span>
 
                         <i className="bi bi-share"></i>
