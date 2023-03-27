@@ -4,6 +4,7 @@ import "./index.css";
 const ExploreComponent = () => {
     return(
         <>
+            <div className="col-11 ">
             <div className="row">
                 <div className="col-11 position-relative">
                     <input placeholder="Search Tuiter"
@@ -33,6 +34,7 @@ const ExploreComponent = () => {
                     SpaceX Starship</h1>
             </div>
             <PostSummaryList/>
+            </div>
         </>
     );
 };

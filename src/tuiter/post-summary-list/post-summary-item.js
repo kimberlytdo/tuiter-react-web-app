@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+
 const PostSummaryItem = (
     {
         post = {
@@ -6,10 +8,15 @@ const PostSummaryItem = (
             "userName": "SpaceX",
             "time": "2h",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla.png"
+            "tuit": "test test test",
+            "image": "spacex.jpeg"
         }
+
     }
+
 ) => {
+
+    const dispatch = useDispatch();
     return(
         <li className="list-group-item">
             <div className="row">
@@ -17,6 +24,7 @@ const PostSummaryItem = (
                     <div>{post.userName} . {post.time}</div>
                     <div className="fw-bolder">{post.topic}</div>
                     <div>{post.title}</div>
+                    <div>{post.tuit}</div>
                 </div>
                 <div className="col-2">
                     <img width={70} className="float-end rounded-3" src={`/images/${post.image}`}/>
