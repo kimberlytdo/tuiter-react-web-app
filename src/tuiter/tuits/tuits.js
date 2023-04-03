@@ -1,7 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../tuits/tuits-reducer.js";
-import {loveClick} from "../tuits/tuits-reducer.js";
+import {deleteTuitThunk} from "../../services/tuits-thunks.js";
 
 const TuitItem = (
     {
@@ -24,13 +23,7 @@ const TuitItem = (
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
-    }
-
-    const loveClickHandler = (id) => {
-        console.log(tuit.liked);
-        dispatch(loveClick(id));
-        console.log(tuit.liked);
+        dispatch(deleteTuitThunk(id));
     }
 
     return(
@@ -67,7 +60,7 @@ const TuitItem = (
                         className="bi bi-arrow-repeat"></i>
                         <label className=" ps-1 pe-5 pt-3 text-secondary">{tuit.retuits}</label>
 
-                        <span onClick={loveClickHandler}><i className="far fa-heart ps-1 pt-3 text-secondary"></i>
+                        <span><i className="far fa-heart ps-1 pt-3 text-secondary"></i>
                                   <b>{ tuit.liked ?
                                 <i className="bi bi-heart-fill text-danger"></i> : <i className="bi bi-heart"></i>}</b>
                             <label className=" ps-1 pe-5 pt-3 text-secondary">{tuit.likes}</label></span>

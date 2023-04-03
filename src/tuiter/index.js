@@ -1,19 +1,19 @@
-import NavigationSidebar from "./navigation-sidebar";
-import WhoToFollowList from "./who-to-follow-list";
-import HomeComponent from "./home";
+import NavigationSidebar from "./navigation-sidebar/index.js";
+import WhoToFollowList from "./who-to-follow-list/index.js";
+import HomeComponent from "./home/index.js";
 import {Routes, Route, Navigate} from 'react-router';
-import ExploreComponent from "./explore";
+import ExploreComponent from "./explore/index.js";
 import {Provider} from "react-redux";
 import {configureStore} from "@reduxjs/toolkit";
-import whoReducer from "./reducers/who-reducer";
-import tuitsReducer from "./tuits/tuits-reducer";
-import profileReducer from "./profile/profile-reducer";
-import EditProfileComponent from "./edit-profile/edit-profile";
+import whoReducer from "./reducers/who-reducer.js";
+import tuitsReducer from "./tuits/tuits-reducer.js";
+import profileReducer from "./profile/profile-reducer.js";
+import EditProfileComponent from "./edit-profile/edit-profile.js";
 // import profileReducer from "./profile/profile-reducer";
-import ProfileComponent from "./profile";
+import ProfileComponent from "./profile/index.js";
 
 const store = configureStore({
-    reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer
+    reducer: {who: whoReducer, tuitsData: tuitsReducer, profile: profileReducer
     }
 })
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import Nav from "../nav";
 import Assignment6 from "./a6";
 import Assignment7 from "./a7";

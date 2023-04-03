@@ -1,5 +1,5 @@
 import WhoToFollowListItem
-    from "./who-to-follow-list-item";
+    from "./who-to-follow-list-item.js";
 import whoArray from "./who.json";
 import {useSelector} from "react-redux";
 const WhoToFollowList = () => {
