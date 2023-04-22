@@ -12,7 +12,7 @@ const TuitStats = ({post}) => {
     }
     let dislike_icon = <i className="bi bi-hand-thumbs-down"></i>
     return (
-        <div >
+        <div>
             <i className={"fa fa-comment ps-1 pt-3 text-secondary"}/>
             <label className=" ps-1 pe-5 pt-3 text-secondary" >{post.replies}</label>
 
