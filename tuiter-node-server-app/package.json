@@ -2,29 +2,16 @@
   "type": "module",
   "name": "tuiter-node-server-app",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "Kimberly Do",
+  "author": "",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kimberlytdo/tuiter-react-web-app.git"
-  },
-  "keywords": [
-    "Node",
-    "REST",
-    "Server",
-    "HTTP"
-  ],
-  "bugs": {
-    "url": "https://github.com/kimberlytdo/tuiter-react-web-app/issues"
-  },
-  "homepage": "https://github.com/kimberlytdo/tuiter-react-web-app#readme",
-  "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2"
   }
 }
