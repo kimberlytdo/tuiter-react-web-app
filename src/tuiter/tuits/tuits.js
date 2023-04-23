@@ -31,6 +31,7 @@ const TuitItem = (
                 src={`/images/${tuit.image}`}
                 alt={tuit.userName}
                 width={20}
+                height={20}
             />
             <div className="ps-3 w-100">
                 <ul className="pb-3">
