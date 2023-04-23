@@ -11,22 +11,6 @@ const initialState = {
     loading: false
 }
 
-const currentUser = {
-    "userName": "NASA",
-    "handle": "@nasa",
-    "image": "../images/NASA-Logo.png",
-};
-
-const templateTuit = {
-    ...currentUser,
-    "topic": "Space",
-    "time": "2h",
-    "liked": false,
-    "replies": 0,
-    "retuits": 0,
-    "likes": 0,
-}
-
 const tuitsSlice = createSlice({
     name: 'tuits',
     initialState,
@@ -74,3 +58,6 @@ const tuitsSlice = createSlice({
     reducers: { }
 });
 export default tuitsSlice.reducer;
+
+export const { dislikeTuit, likeTuit, createTuit, deleteTuit } =
+    tuitsSlice.actions;
