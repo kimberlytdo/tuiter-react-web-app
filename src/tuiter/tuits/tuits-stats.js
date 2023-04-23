@@ -44,13 +44,37 @@ const TuitStats  = (
         );
     };
     return (
-        <div>
-            Likes: {tuit.likes}
-            <i onClick={() => dispatch(updateTuitThunk({
-                ...tuit,
-                likes: tuit.likes + 1
-            })} className="bi bi-heart-fill me-2 text-danger"></i>
-        </div>
+        <ul className="d-flex justify-content-around align-items-center">
+            <li>
+                <i className="bi bi-chat"></i> {tuit.replies}
+            </li>
+            <li>
+                <i className="bi bi-arrow-clockwise"></i> {tuit.retuits}
+            </li>
+            <li>
+                <i
+                    onClick={handleLikeClick}
+                    className={`bi ${
+                        tuit.liked ? "bi-heart-fill text-danger" : "bi-heart"
+                    }`}
+                ></i>{" "}
+                {tuit.likes}
+            </li>
+            <li>
+                <i
+                    onClick={handleDislikeClick}
+                    className={`bi ${
+                        tuit.disliked
+                            ? "bi-hand-thumbs-down-fill text-secondary"
+                            : "bi-hand-thumbs-down"
+                    }`}
+                ></i>{" "}
+                {tuit.dislikes}
+            </li>
+            <li>
+                <i className="bi bi-share"></i>
+            </li>
+        </ul>
     );
 };
 
