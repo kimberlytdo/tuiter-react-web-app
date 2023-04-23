@@ -25,6 +25,9 @@ const TuitItem = (
 ) => {
 
     const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuitThunk(id));
+    }
 
     return(
         <div className="list-group-item d-flex">
@@ -42,7 +45,7 @@ const TuitItem = (
                         <i className="bi bi-patch-check-fill text-primary"></i>{" "}
                         {tuit.handle} · {tuit.time}
                         <i className="bi bi-x-lg float-end"
-                           onClick={() => dispatch(deleteTuitThunk(tuit._id))}></i>
+                           onClick={() => deleteTuitHandler(tuit._id)}></i>
                     </li>
                     <li>{tuit.tuit}</li>
                 </ul>
