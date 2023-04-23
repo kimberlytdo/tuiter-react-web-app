@@ -32,8 +32,8 @@ const TuitItem = (
                 className="wd-profile-pic rounded-circle"
                 src={`/images/${tuit.image}`}
                 alt={tuit.userName}
-                width={20}
-                height={20}
+                width={50}
+                height={50}
             />
             <div className="ps-3 w-100">
                 <ul className="pb-3">
