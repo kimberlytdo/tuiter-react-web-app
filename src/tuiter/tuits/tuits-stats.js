@@ -24,6 +24,7 @@ const TuitStats  = (
 ) => {
     const dispatch = useDispatch();
     const handleLikeClick = () => {
+        console.log("LIKE")
         const newLikesCount = tuit.liked ? tuit.likes - 1 : tuit.likes + 1;
         dispatch(
             updateTuitThunk({
@@ -34,6 +35,7 @@ const TuitStats  = (
         );
     };
     const handleDislikeClick = () => {
+        console.log("DISLIKE")
         const newDislikesCount = tuit.disliked
             ? tuit.dislikes - 1
             : tuit.dislikes + 1;
