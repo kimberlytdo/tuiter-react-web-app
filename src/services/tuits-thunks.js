@@ -1,9 +1,10 @@
 import {createAsyncThunk} from "@reduxjs/toolkit"
-import * as service from "./tuits-service.js"
+import * as service from "./tuits-service"
 
 export const findTuitsThunk = createAsyncThunk(
-    'tuits/findTuits', async () =>
-        await service.findTuits()
+    'tuits/findTuits', async () => {
+        return await service.findTuits()
+    }
 )
 
 export const deleteTuitThunk = createAsyncThunk(
@@ -16,13 +17,12 @@ export const deleteTuitThunk = createAsyncThunk(
 export const createTuitThunk = createAsyncThunk(
     'tuits/createTuit',
     async (tuit) => {
-        const newTuit = await service.createTuit(tuit)
-        return newTuit
+        return await service.createTuit(tuit)
     })
 
-export const updateTuitThunk =
-    createAsyncThunk(
-        'tuits/updateTuit',
-        async (tuit) =>
-            await service.updateTuit(tuit)
-    )
+export const updateTuitThunk = createAsyncThunk(
+    'tuits/updateTuit',
+    async (tuit) => {
+        return await service.updateTuit(tuit)
+    }
+)
